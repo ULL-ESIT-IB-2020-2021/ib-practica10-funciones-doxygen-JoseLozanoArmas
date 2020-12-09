@@ -15,6 +15,7 @@
   */
 #include <iostream>
 #include <string>
+#include <fstream>
 #include "cripto_funciones.cc"
 
 
@@ -24,6 +25,7 @@ int main (int argc, char* argv[]){
   int metodo = stoi(convertir_metodo);
   std::string operacion = argv[5];
 
+ 
   
   ///Esta sección esta dedicada a donde elegir el metodo de encriptado 
   /*switch(metodo){

@@ -1,11 +1,47 @@
 #include <bitset>
 #include <iostream>
 #include <string>
-#include "cripto.h"
+#include <fstream>
+#include "cripto_funciones.cc"
 
 int main (int argc, char * argv[]){
+  //captura la información del texto.
+  std::ifstream texto_introducido { "fichero_de_prueba_encrip.txt"};
+   while (texto_introducido) {
+    std::string lineas;
+    std::getline(texto_introducido, lineas);  
+    std::cout << lineas << std::endl;
+
+    //VERSION ENCRIPTAR CON CESAR
+  int cesar = 1;
+  char resultado;
+
+  for (size_t i = 0; i < lineas.length(); i++){
+    resultado = (lineas[i] + cesar);
+    std::cout << resultado << std::endl;
+  }
+
+
+
+  }
+  
+  return 0;
+
   
 }
+ 
+
+/*//VERSION ENCRIPTAR CON CESAR
+std::string Cesar_encriptado (std::string palabra);
+  std::string palabra = argv[1];
+  std::string convertir = argv[2];
+  int cesar = stoi(convertir);
+  char resultado;
+
+  for (size_t i = 0; i < palabra.length(); i++){
+    resultado = (palabra[i] + cesar);
+    return resultado;
+  }*/
 
   
 
