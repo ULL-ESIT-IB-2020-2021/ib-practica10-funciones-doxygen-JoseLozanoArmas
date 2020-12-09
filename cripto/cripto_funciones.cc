@@ -10,10 +10,16 @@
   * @brief En este apartado encontrará las funciones que ponen en marcha el programa, asi como algunos comentarios
   * sobre las mismas. 
   * @bug 
-  * @see 
+  * @see https://es.wikipedia.org/wiki/Cifrado_XOR
+  *      https://es.wikipedia.org/wiki/Cifrado_C%C3%A9sar 
   */
 
+
 #include <iostream>
+#include "cripto.h"
+
+
+
 //Encriptar XOR
 /*int main (int argc, char * argv[]){
   std::string palabra = argv [1];
@@ -75,8 +81,8 @@ void Errores (int argc, char * argv[]){
     << "fichero_entrada: Fichero a codificar" << std::endl
     << "fichero_salida:  Fichero codificado" << std::endl
     << "método:          Indica el método de encriptado" << std::endl
-    << "                  1: Cifrado xor " << std::endl
-    << "                   2: Cifrado de César" << std::endl
+    << "                 1: Cifrado xor " << std::endl
+    << "                 2: Cifrado de César" << std::endl
     << "password:        Palabra secreta en el caso de método 1, Valor de K en el método 2"
     << "operación:       Operación a realizar en el fichero" << std::endl
     << "                   +: encriptar el fichero" << std::endl

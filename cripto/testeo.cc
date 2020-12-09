@@ -1,22 +1,13 @@
 #include <bitset>
 #include <iostream>
 #include <string>
+#include "cripto.h"
 
-
-//VERSION DESENCRIPTAR CON CESAR
- int main (int argc,char* argv[]){
-  std::string palabra = argv[1];
-  std::string convertir = argv[2];
-  int cesar = stoi(convertir);
-  char resultado;
-
-  for (size_t i = 0; i < palabra.length(); i++){
-    resultado = (palabra[i] - cesar);
-    std::cout << resultado << std::endl;
-  }
+int main (int argc, char * argv[]){
+  
 }
 
-
+  
 
 
  
