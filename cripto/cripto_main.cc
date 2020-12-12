@@ -21,10 +21,17 @@
 
 int main (int argc, char* argv[]){
   Errores(argc, argv);
+  std::ifstream texto_introducido { "fichero_de_prueba_encrip.txt"};
+  std::ofstream texto_resultado {"fichero_de_prueba_desencrip.txt"};
   std::string convertir_metodo = argv[3];
   int metodo = stoi(convertir_metodo);
   std::string operacion = argv[5];
 
+  if(argv[3] == 2){
+    
+  }
+
+  //texto_resultado << DesencriptadoCesar(lineas,cesar);
  
   
   ///Esta sección esta dedicada a donde elegir el metodo de encriptado 

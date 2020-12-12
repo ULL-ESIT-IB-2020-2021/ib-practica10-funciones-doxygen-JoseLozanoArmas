@@ -2,24 +2,30 @@
 #include <iostream>
 #include <string>
 #include <fstream>
+#include <vector>
 #include "cripto_funciones.cc"
+
+
 
 int main (int argc, char * argv[]){
   //captura la información del texto.
   std::ifstream texto_introducido { "fichero_de_prueba_encrip.txt"};
-   while (texto_introducido) {
-    std::string lineas;
-    std::getline(texto_introducido, lineas);  
-    std::cout << lineas << std::endl;
+  std::ofstream texto_resultado {"fichero_de_prueba_desencrip.txt"};
+  std::string lineas;
+  std::string convertir_cesar = argv[2];
+  int cesar = stoi(convertir_cesar);
 
-    //VERSION ENCRIPTAR CON CESAR
-  int cesar = 1;
-  char resultado;
+    while ((std::getline(texto_introducido,lineas))) {
+      std::getline(texto_introducido, lineas);  
+      std::cout << lineas << std::endl;
 
-  for (size_t i = 0; i < lineas.length(); i++){
-    resultado = (lineas[i] + cesar);
-    std::cout << resultado << std::endl;
-  }
+        texto_resultado << EncriptadoCesar(lineas,cesar);
+      
+
+      
+
+      
+
 
 
 

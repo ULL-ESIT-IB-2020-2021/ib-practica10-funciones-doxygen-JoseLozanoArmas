@@ -35,33 +35,31 @@
 }*/
 
 
+  //VERSION ENCRIPTAR CON CESAR 
+  std::string EncriptadoCesar(std::string lineas,int cesar){
+  std::string resultado;
+  std::string suma_letras;
+  for (size_t i = 0; i < lineas.length(); i++){
+    resultado = (lineas[i] + cesar);
+    suma_letras = suma_letras + resultado;
+  } 
 
-//VERSION ENCRIPTAR CON CESAR
- /*int main (int argc,char* argv[]){
-  std::string palabra = argv[1];
-  std::string convertir = argv[2];
-  int cesar = stoi(convertir);
-  char resultado;
-
-  for (size_t i = 0; i < palabra.length(); i++){
-    resultado = (palabra[i] + cesar);
-    std::cout << resultado << std::endl;
+  return suma_letras;
   }
-}*/
 
-//VERSION DESENCRIPTAR CON CESAR
-/*
- int main (int argc,char* argv[]){
-  std::string palabra = argv[1];
-  std::string convertir = argv[2];
-  int cesar = stoi(convertir);
-  char resultado;
+   //VERSION DESENCRIPTAR CON CESAR 
+  std::string DesencriptadoCesar(std::string lineas,int cesar){
+  std::string resultado;
+  std::string suma_letras;
+  for (size_t i = 0; i < lineas.length(); i++){
+    resultado = (lineas[i] - cesar);
+    suma_letras = suma_letras + resultado;
+  } 
 
-  for (size_t i = 0; i < palabra.length(); i++){
-    resultado = (palabra[i] - cesar);
-    std::cout << resultado << std::endl;
+  return suma_letras;
   }
-}*/
+
+
 
 
 

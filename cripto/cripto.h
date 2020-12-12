@@ -16,4 +16,6 @@
  #include <iostream>
 
  
- void Errores (int argc, char * argv[]);
+ void Errores (int argc, char * argv[]); 
+ std::string EncriptadoCesar(std::string lineas,int cesar);
+ std::string DesencriptadoCesar(std::string lineas,int cesar);
