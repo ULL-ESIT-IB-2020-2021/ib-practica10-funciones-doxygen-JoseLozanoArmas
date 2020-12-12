@@ -20,15 +20,19 @@
 
 
 int main (int argc, char* argv[]){
-  Errores(argc, argv);
-  std::ifstream texto_introducido { "fichero_de_prueba_encrip.txt"};
-  std::ofstream texto_resultado {"fichero_de_prueba_desencrip.txt"};
+  Errores(argc, argv);  ///aplicamos la funcion de errores en caso de fallo al ejecutar el programa
+
+  std::ifstream texto_introducido (argv[1]); ///durante todo este apartado declarmos variables y demás 
+  std::ofstream texto_resultado {argv[2]};
   std::string convertir_metodo = argv[3];
   int metodo = stoi(convertir_metodo);
+  
   std::string operacion = argv[5];
+  std::string lineas;
 
-  if(argv[3] == 2){
-    
+   while ((std::getline(texto_introducido,lineas))) {
+      std::getline(texto_introducido, lineas);  
+      
   }
 
   //texto_resultado << DesencriptadoCesar(lineas,cesar);

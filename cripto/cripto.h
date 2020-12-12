@@ -4,7 +4,7 @@
   * Grado en Ingeniería Informática
   * Informática Básica
   *
-  * @file cripto_main.cc
+  * @file cripto.h
   * @author José Lozano Armas alu0101392561@ull.edu.es
   * @date -------------------------
   * @brief En este apartado encontrará las declaraciones de las funciones incluidas en el programa

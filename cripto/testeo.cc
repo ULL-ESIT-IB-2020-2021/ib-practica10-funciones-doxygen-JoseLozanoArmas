@@ -9,20 +9,19 @@
 
 int main (int argc, char * argv[]){
   //captura la información del texto.
-  std::ifstream texto_introducido { "fichero_de_prueba_encrip.txt"};
-  std::ofstream texto_resultado {"fichero_de_prueba_desencrip.txt"};
+  std::ifstream texto_introducido (argv[1]);
+  std::ofstream texto_resultado (argv[2]);
   std::string lineas;
-  std::string convertir_cesar = argv[2];
+  std::string convertir_cesar = argv[3];
   int cesar = stoi(convertir_cesar);
 
     while ((std::getline(texto_introducido,lineas))) {
       std::getline(texto_introducido, lineas);  
-      std::cout << lineas << std::endl;
+      std::cout << lineas << std::endl; 
 
-        texto_resultado << EncriptadoCesar(lineas,cesar);
-      
-
-      
+       
+       
+       
 
       
 
