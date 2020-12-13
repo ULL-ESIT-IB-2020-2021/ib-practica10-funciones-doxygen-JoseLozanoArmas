@@ -55,20 +55,5 @@ int main (int argc, char* argv[]){
       }
       
   }
-
-  //texto_resultado << DesencriptadoCesar(lineas,cesar);
- 
-  
-  ///Esta sección esta dedicada a donde elegir el metodo de encriptado 
-  /*switch(metodo){
-    case 1:
-    //Xor
-      break;
-    case 2:
-    //cesar
-      break;
-
-  }*/
-  
  
 }
