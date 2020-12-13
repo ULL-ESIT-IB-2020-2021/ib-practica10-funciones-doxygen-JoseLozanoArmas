@@ -21,18 +21,34 @@
 
 
 //Encriptar XOR
-/*int main (int argc, char * argv[]){
-  std::string palabra = argv [1];
-  const std::string clave = argv [2];
-  const int pre_conversion = 128;
+std::string EncriptarXor(std::string lineas,int longitud, std::string clave_xor){
+  std::string criptado, resultado;
+  int numero_criptado[10];
+  int numero_clave[10];
+  int numero_palabra[10];
 
-  for (size_t i = 0 ; i < palabra.length(); i++){
-    std::cout << palabra[i] << std::endl;
-    std::cout << ((std::bitset<10>{clave[i]} ^ std::bitset<10>{pre_conversion}) ^ std::bitset<10>{palabra[i]}) << std::endl;
-  }
+    for(int i=0; i<=longitud+1;i++){
+      numero_clave[i]= int(clave_xor[i]);
+      numero_palabra[i]= int(lineas[i]);
+      numero_criptado[i]= (numero_palabra[i]^numero_clave[i]);
+      criptado[i]=(char(numero_criptado[i]));
+      resultado+= criptado[i];
+    }
 
-  return 0;
-}*/
+    return resultado;
+
+}
+//Desencriptar Xor
+std::string DesencriptarXor(std::string lineas,int longitud, std::string clave_xor){
+    for(int i=0; i<=longitud+1;i++){
+      numero_clave[i]= int(clave_xor[i]);
+      numero_palabra[i]= int(lineas[i]);
+      numero_criptado[i]= (numero_palabra[i]^numero_clave[i]);
+      criptado[i]=(char(numero_criptado[i]));
+      resultado+= criptado[i];
+    }
+
+    return resultado;
 
 
   //VERSION ENCRIPTAR CON CESAR 

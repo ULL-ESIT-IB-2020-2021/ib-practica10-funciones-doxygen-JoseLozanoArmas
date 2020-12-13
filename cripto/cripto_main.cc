@@ -27,19 +27,21 @@ int main (int argc, char* argv[]){
   std::string metodo = argv[3];
   std::string convertir_clave_cesar = argv[4];
   int clave_cesar = stoi(convertir_clave_cesar);
+  std::string clave_xor = argv[4];
 
   std::string operacion = argv[5];
   std::string lineas;
+  int longitud = lineas.length[];
 
    while ((std::getline(texto_introducido,lineas))) {
       std::getline(texto_introducido, lineas);  
 
       if (metodo == "1" ) {
         if (operacion == "+"){
-
+          //texto_resultado << EncriptarXor(lineas,longitud, clave_xor);
         }
         if (operacion == "-"){
-
+          //texto_resultado << DesencriptarXor(lineas,longitud,clave_xor);
         }
       }
 

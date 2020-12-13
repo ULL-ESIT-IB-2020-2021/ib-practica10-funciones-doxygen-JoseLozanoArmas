@@ -19,3 +19,6 @@
  void Errores (int argc, char * argv[]); 
  std::string EncriptadoCesar(std::string lineas,int cesar);
  std::string DesencriptadoCesar(std::string lineas,int cesar);
+ std::string EncriptarXor(std::string lineas,int longitud, std::string clave);
+ std::string DesencriptarXor(std::string frase,int longitud, std::string clave);
+ 
