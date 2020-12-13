@@ -17,38 +17,45 @@
 
 #include <iostream>
 #include "cripto.h"
-
-
-
-//Encriptar XOR
-std::string EncriptarXor(std::string lineas,int longitud, std::string clave_xor){
+//Encriptado Xor
+std::string EncriptarXor(std::string lineas,int longitud, std::string clave){
   std::string criptado, resultado;
   int numero_criptado[10];
   int numero_clave[10];
   int numero_palabra[10];
 
-    for(int i=0; i<=longitud+1;i++){
-      numero_clave[i]= int(clave_xor[i]);
-      numero_palabra[i]= int(lineas[i]);
-      numero_criptado[i]= (numero_palabra[i]^numero_clave[i]);
-      criptado[i]=(char(numero_criptado[i]));
-      resultado+= criptado[i];
+  //numero_clave[i]= int(k[i]);
+    for(size_t i = 0; i <= longitud + 1; i++){
+      numero_clave[i] = int(clave[i]);
+      numero_palabra[i] = int(lineas[i]);
+      numero_criptado[i] = (numero_palabra[i]^ numero_clave[i]);
+      criptado[i] = (char(numero_criptado[i]));
+      resultado = resultado + criptado[i];
     }
-
     return resultado;
+
 
 }
-//Desencriptar Xor
-std::string DesencriptarXor(std::string lineas,int longitud, std::string clave_xor){
-    for(int i=0; i<=longitud+1;i++){
-      numero_clave[i]= int(clave_xor[i]);
-      numero_palabra[i]= int(lineas[i]);
-      numero_criptado[i]= (numero_palabra[i]^numero_clave[i]);
-      criptado[i]=(char(numero_criptado[i]));
-      resultado+= criptado[i];
-    }
 
+//Desencriptado Xor
+std::string DesencriptarXor(std::string lineas,int longitud, std::string clave){
+  std::string criptado, resultado;
+  int numero_criptado[10];
+  int numero_clave[10];
+  int numero_palabra[10];
+
+  //numero_clave[i]= int(k[i]);
+    for(size_t i = 0; i <= longitud + 1; i++){
+      numero_clave[i] = int(clave[i]);
+      numero_palabra[i] = int(lineas[i]);
+      numero_criptado[i] = (numero_palabra[i]^ numero_clave[i]);
+      criptado[i] = (char(numero_criptado[i]));
+      resultado = resultado + criptado[i];
+    }
     return resultado;
+
+
+}
 
 
   //VERSION ENCRIPTAR CON CESAR 

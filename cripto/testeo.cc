@@ -5,39 +5,7 @@
 #include <vector>
 #include "cripto_funciones.cc"
 
-
-
-std::string EncriptarXor(std::string lineas,int longitud, std::string clave){
-  std::string criptado, resultado;
-  int numero_criptado;
-  int numero_clave;
-  int numero_palabra;
-
-  //numero_clave[i]= int(k[i]);
-    for(size_t i = 0; i <= longitud + 1; i++){
-      numero_clave[i] = int(clave[i]);
-      numero_palabra[i] = int(lineas[i]);
-      numero_criptado[i] = (numero_palabra[i]^ numero_clave[i]);
-      criptado[i] = (char(numero_criptado[i]));
-      resultado = resultado + criptado[i];
-    }
-    return resultado;
-
-
-} 
-/*std::string DesencriptarXor(std::string frase,int longitud, std::string k){
-    for(int i=0; i<=longitud+1;i++){
-      numero_clave[i]= int(k[i]);
-      numero_palabra[i]= int(frase[i]);
-      numero_criptado[i]= (numero_palabra[i]^numero_clave[i]);
-      criptado[i]=(char(numero_criptado[i]));
-      resultado+= criptado[i];
-    }
-
-    return resultado;
-
-}*/
-
+ 
 
 
 int main (){

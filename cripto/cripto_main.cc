@@ -31,17 +31,17 @@ int main (int argc, char* argv[]){
 
   std::string operacion = argv[5];
   std::string lineas;
-  int longitud = lineas.length[];
+  int longitud = lineas.length();
 
    while ((std::getline(texto_introducido,lineas))) {
       std::getline(texto_introducido, lineas);  
 
       if (metodo == "1" ) {
         if (operacion == "+"){
-          //texto_resultado << EncriptarXor(lineas,longitud, clave_xor);
+          texto_resultado << EncriptarXor(lineas,longitud, clave_xor);
         }
         if (operacion == "-"){
-          //texto_resultado << DesencriptarXor(lineas,longitud,clave_xor);
+          texto_resultado << DesencriptarXor(lineas,longitud,clave_xor);
         }
       }
 
