@@ -64,7 +64,7 @@
 
 
 void Errores (int argc, char * argv[]){
-  if (argc != 2) {   //Aquí situo la condición de error
+  if (argc != 6) {   //Aquí situo la condición de error
   std::cout << argv[0] << "./cripto -- Cifrado de ficheros" << std::endl
   << "Modo de uso: ./cripto fichero_entrada fichero_salida método password operación" << std::endl
   << "Pruebe ./cripto --help para más información" << std::endl; 

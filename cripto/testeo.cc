@@ -7,51 +7,85 @@
 
 
 
-int main (int argc, char * argv[]){
+int main (){
   //captura la información del texto.
-  std::ifstream texto_introducido (argv[1]);
-  std::ofstream texto_resultado (argv[2]);
-  std::string lineas;
-  std::string convertir_cesar = argv[3];
-  int cesar = stoi(convertir_cesar);
+  std::ifstream texto_introducido {"fichero_entrada.txt"};
+  std::ofstream texto_resultado {"fichero_salida.txt"};
+  
+  int cesar = 1;
 
-    while ((std::getline(texto_introducido,lineas))) {
-      std::getline(texto_introducido, lineas);  
-      std::cout << lineas << std::endl; 
-
-       
-       
-       
-
-      
-
+  while (texto_introducido){
+    std::string lineas;
+    std::getline(texto_introducido,lineas);
 
 
 
   }
-  
-  return 0;
-
-  
+     
+    
 }
- 
 
-/*//VERSION ENCRIPTAR CON CESAR
-std::string Cesar_encriptado (std::string palabra);
-  std::string palabra = argv[1];
-  std::string convertir = argv[2];
-  int cesar = stoi(convertir);
-  char resultado;
 
-  for (size_t i = 0; i < palabra.length(); i++){
-    resultado = (palabra[i] + cesar);
-    return resultado;
-  }*/
+
+
+
+
+
+
+/*std::string palabra = "ayer";
+      std::string clave = "alfa";
+      std::string resultado;
+
+      int convertir_palabra = 0;
+      int convertir_clave = 0;
+      int resultado_numerico = 0;
+
+      std::cout << palabra << std::endl;
+      std::cout << clave << std::endl;
+
+      for (size_t i = 0, j = 0; i < palabra.length(); i++, j++){
+        convertir_palabra = int (palabra[i]);
+        convertir_clave = int (clave[i]);
+        std::cout << convertir_palabra << std::endl;
+        std::cout << convertir_clave << std::endl;
+
+        resultado = (convertir_clave ^ convertir_palabra);
+        std::cout << resultado << std::endl;
+      }*/
+
+
+
+
+
+
+
+      /*for (size_t i = 0; i < palabra.length(); i++){
+        
+        convertir_palabra = int (palabra[i]);
+        std::cout << palabra[i] << std::endl;
+        std::cout << convertir_palabra << std::endl;
+
+      }*/
+    
+
+        //std::cout << ((std::bitset<10>{clave[i]} ^ std::bitset<10>{pre_conversion})) << std::endl;
+        
+        
+  
 
   
 
 
+
+
+
+
+       
+       
+
  
+
+   
 
 /*AÑADIR FUNCION QUE SE SI...
 
