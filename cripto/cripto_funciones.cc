@@ -13,7 +13,7 @@
   * @see https://es.wikipedia.org/wiki/Cifrado_XOR
   *      https://es.wikipedia.org/wiki/Cifrado_C%C3%A9sar 
   */
-
+ 
 
 #include <iostream>
 #include "cripto.h"

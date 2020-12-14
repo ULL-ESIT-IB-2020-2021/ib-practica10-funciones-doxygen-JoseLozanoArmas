@@ -16,7 +16,25 @@
 #include <iostream>
 #include <string>
 #include <fstream>
+#include <sstream>
 #include "cripto_funciones.cc"
+
+
+int ContarPalabras(std::string lineas) {
+     int contador_palabras = 0;
+   for (size_t i = 0; i < lineas.length(); i++){
+    
+     if (lineas[i] == ' ') {
+
+       contador_palabras = contador_palabras + 1;
+
+     }
+     return contador_palabras;
+   }
+     
+}
+
+
 
 
 int main (int argc, char* argv[]){
@@ -53,7 +71,8 @@ int main (int argc, char* argv[]){
           texto_resultado << DesencriptadoCesar(lineas, clave_cesar);
         }
       }
-      
   }
+
+  
  
 }
